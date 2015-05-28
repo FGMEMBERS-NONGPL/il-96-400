@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <path>asi.ac</path>
+    
+ <animation>
+   <type>select</type>
+  <object-name>asi</object-name>
+  <object-name>Cylinder</object-name>
+  <object-name>light</object-name>
+  <object-name>asineedle</object-name>
+  <object-name>Plane.008</object-name>
+  <object-name>Plane.007</object-name>
+  <object-name>Plane.006</object-name>
+  <object-name>Plane.005</object-name>
+  <object-name>Plane.004</object-name>
+  <object-name>Plane.003</object-name>
+  <object-name>Plane.002</object-name>
+   <condition>
+   <equals>
+    <property>sim/current-view/view-number</property>
+    <value>0</value>
+   </equals>
+  </condition>
+ </animation>
+   
+<animation>
+<type>material</type> 
+<object-name>asi</object-name>
+<object-name>Cylinder</object-name>
+<emission>
+    <red>0.1</red>
+    <green>0.1</green>
+    <blue>0.1</blue>
+	    <factor-prop>/controls/lighting/panel-norm[0]</factor-prop>
+ </emission>
+</animation>
+
+     <animation>
+        <type>rotate</type>
+        <object-name>asineedle</object-name>
+        <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>60</ind><dep>2.5</dep></entry>
+            <entry><ind>80.0</ind><dep>33.0</dep></entry>
+            <entry><ind>100</ind><dep>63.25</dep></entry>
+            <entry><ind>120</ind><dep>90.0</dep></entry>
+            <entry><ind>160.0</ind><dep>150.0</dep></entry>
+            <entry><ind>180.0</ind><dep>168.0</dep></entry>
+            <entry><ind>200</ind><dep>187.0</dep></entry>
+            <entry><ind>250.0</ind><dep>220.0</dep></entry>
+            <entry><ind>300.0</ind><dep>256.0</dep></entry>
+            <entry><ind>350.0</ind><dep>282.0</dep></entry>
+            <entry><ind>400.0</ind><dep>309.0</dep></entry>
+            <entry><ind>450.0</ind><dep>336.0</dep></entry>
+        </interpolation>
+        <axis>
+            <x>-1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    
+ <animation>
+  <type>textranslate</type>
+  <object-name>Plane.005</object-name>
+  <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+  <factor>0.001</factor>
+  <step>100</step>
+  <scroll>1</scroll>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>textranslate</type>
+  <object-name>Plane.004</object-name>
+  <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+  <factor>0.01</factor>
+  <step>10</step>
+  <scroll>1</scroll>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>textranslate</type>
+  <object-name>Plane.003</object-name>
+  <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+  <factor>0.1</factor>
+  <step>1</step>
+  <scroll>1</scroll>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>textranslate</type>
+  <object-name>Plane.007</object-name>
+  <property>/velocities/mach</property>
+  <factor>0.1</factor>
+  <step>1</step>
+  <scroll>1</scroll>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>textranslate</type>
+  <object-name>Plane.006</object-name>
+  <property>/velocities/mach</property>
+  <factor>1</factor>
+  <step>0.1</step>
+  <scroll>1</scroll>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+    
+</PropertyList>

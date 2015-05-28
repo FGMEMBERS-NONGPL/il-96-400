@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <path>rmi.ac</path>
+ 
+ <animation>
+  <type>material</type>
+    <object-name>RMI.compass</object-name> 
+    <object-name>needle1</object-name>
+    <object-name>needle2</object-name>
+<emission>
+	 <red>0.3</red>
+	 <green>0.25</green>
+	 <blue>0.2</blue>
+	 <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>	
+ </emission>
+  </animation>
+ 
+<animation>
+<type>material</type> 
+<object-name>RMI.bezel</object-name>
+<emission>
+    <red>0.1</red>
+    <green>0.1</green>
+    <blue>0.1</blue>
+	    <factor-prop>/controls/lighting/panel-norm[0]</factor-prop>
+ </emission>
+</animation>
+
+  <animation>
+  <type>rotate</type>
+    <object-name>needle1</object-name>
+   <property>instrumentation/rmi/fopointer1</property>
+    <axis>
+      <x>-1.0</x>
+      <y>0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+  <type>rotate</type>
+    <object-name>needle2</object-name>
+  <property>instrumentation/rmi/fopointer2</property>
+    <axis>
+      <x>-1.0</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>RMI.compass</object-name>
+    <property>orientation/heading-magnetic-deg</property>
+    <axis>
+      <x>1.0</x>
+      <y>0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+   
+</PropertyList>

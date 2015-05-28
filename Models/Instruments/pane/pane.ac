@@ -1,0 +1,23 @@
+AC3Db
+MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.2 0.2 0.2  shi 128  trans 0
+OBJECT world
+kids 1
+OBJECT poly
+name "rect"
+loc 0.00208435 0.0309754 0.046976
+texture "pane.rgb"
+crease 45.000000
+numvert 4
+0 -0.0814831 -0.0212805
+0 -0.0814831 0.0212805
+0 0.0814831 0.0212805
+0 0.0814831 -0.0212805
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+3 0.348094 0.987882
+2 0.572575 0.987882
+1 0.572575 0.021418
+0 0.348094 0.021418
+kids 0

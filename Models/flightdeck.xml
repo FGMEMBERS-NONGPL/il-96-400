@@ -1,0 +1,262 @@
+<!-- il-96-400
+
+-->
+
+<PropertyList>
+
+    <path>flightdeck.ac</path>
+
+   <!-- <model>
+        <name>Pedestal</name>
+        <path>Aircraft/il-96-400/Models/pedestal.xml</path>
+        <offsets>
+            <x-m>-1.288</x-m>
+            <y-m>0.017</y-m>
+            <z-m>-0.388</z-m>
+        </offsets>
+    </model> -->
+
+    
+
+    <model>
+        <name>OHpanel</name>
+        <path>Aircraft/il-96-400/Models/OHpanel.xml</path>
+        <offsets>
+            <x-m>-1.103</x-m>
+            <y-m>-0.007</y-m>
+            <z-m>1.279</z-m>
+            <pitch-deg>63</pitch-deg>
+        </offsets>
+    </model>
+
+    <!-- <model>
+        <name>APpanel</name>
+        <path>Aircraft/il-96-400/Models/APpanel.xml</path>
+        <offsets>
+            <x-m>-23.57</x-m>
+            <y-m>-0.006</y-m>
+            <z-m>0.615</z-m>
+            <pitch-deg>-10</pitch-deg>
+        </offsets>
+    </model> -->
+
+   <!-- <model>
+        <name>CTL1</name>
+        <path>Aircraft/il-96-400/Models/Instruments/EFIS/efis-ctl.xml</path>
+        <offsets>
+            <x-m>-23.57</x-m>
+            <y-m>-0.371</y-m>
+            <z-m>0.581</z-m>
+            <pitch-deg>-10</pitch-deg>
+        </offsets>
+    </model> -->
+
+   <!-- <model>
+        <name>CTL2</name>
+        <path>Aircraft/il-96-400/Models/Instruments/EFIS/efis-ctl.xml</path>
+        <offsets>
+            <x-m>-23.57</x-m>
+            <y-m>0.340</y-m>
+            <z-m>0.581</z-m>
+            <pitch-deg>-10</pitch-deg>
+        </offsets>
+    </model> -->
+
+  <!--  <model>
+        <name>Pclock </name>
+        <path>Aircraft/il-96-400/Models/Instruments/chronometer.xml</path>
+        <offsets>
+            <x-m>-23.352</x-m>
+            <y-m>-0.018</y-m>
+            <z-m>0.981</z-m>
+            <pitch-deg>-45</pitch-deg>
+        </offsets>
+    </model> -->
+
+
+   <!-- <model>
+        <name>STDBY AI</name>
+        <path>Aircraft/il-96-400/Models/Instruments/stby-ai.xml</path>
+        <offsets>
+            <x-m>-23.60</x-m>
+            <y-m>-0.009</y-m>
+            <z-m>0.477</z-m>
+            <pitch-deg>-10</pitch-deg>
+        </offsets>
+    </model> -->
+
+   
+
+   <!-- <model>
+        <name>STBY ALT</name>
+        <path>Aircraft/il-96-400/Models/Instruments/stby-alt.xml</path>
+        <offsets>
+            <x-m>-23.60</x-m>
+            <y-m>-0.277</y-m>
+            <z-m>0.477</z-m>
+            <pitch-deg>-10</pitch-deg>
+        </offsets>
+    </model> -->
+
+
+
+    <!-- <model>
+        <name>GearCTL</name>
+        <path>Aircraft/il-96-400/Models/gear-ctl.xml</path>
+        <offsets>
+            <x-m>-23.568</x-m>
+            <y-m>0.307</y-m>
+            <z-m>0.390</z-m>
+            <pitch-deg>-10</pitch-deg>
+        </offsets>
+    </model> -->
+
+<!--2d PFD-->
+    <!--model>
+        <name>panel1</name>
+        <path>Aircraft/il-96-400/Models/panel1.xml</path>
+    </model-->
+
+<!--3d PFD-->
+    <!-- <model>
+        <name>panel2</name>
+        <path>Aircraft/il-96-400/Models/panel2.xml</path>
+    </model> -->
+
+<!--  controls -->
+
+  <!--  <animation>
+        <type>translate</type>
+        <object-name>RHpedal</object-name>
+        <property>controls/flight/rudder</property>
+        <factor>0.05</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>LHpedal</object-name>
+        <property>controls/flight/rudder</property>
+        <factor>-0.05</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Yokeshaft</object-name>
+        <object-name>Yoke</object-name>
+        <object-name>Yoke.001</object-name>
+        <property>controls/flight/elevator</property>
+        <factor>15</factor>
+        <center>
+            <x-m>-1.596</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.257</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Yoke</object-name>
+        <property>controls/flight/aileron</property>
+        <factor>30</factor>
+        <center>
+            <x-m>-1.574</x-m>
+            <y-m>0.559</y-m>
+            <z-m>0.336</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Yoke.001</object-name>
+        <property>controls/flight/aileron</property>
+        <factor>30</factor>
+        <center>
+            <x-m>-1.574</x-m>
+            <y-m>-0.526</y-m>
+            <z-m>0.336</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>Cseat.armrest</object-name>
+        <property>sim/model/armrest</property>
+        <factor>93</factor>
+        <center>
+            <x-m>-0.928</x-m>
+            <y-m>0</y-m>
+            <z-m>0.127</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Pseat.armrest</object-name>
+        <property>sim/model/armrest</property>
+        <factor>93</factor>
+        <center>
+            <x-m>-0.928</x-m>
+            <y-m>0</y-m>
+            <z-m>0.127</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>Pseat.armrest</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/model/armrest</property>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>Cseat.armrest</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/model/armrest</property>
+            </binding>
+        </action>
+    </animation> -->
+
+</PropertyList>

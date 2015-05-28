@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <path>pane.ac</path>
+ 
+ <animation>
+  
+<emission>
+	 <red>0.3</red>
+	 <green>0.25</green>
+	 <blue>0.2</blue>
+	 <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>	
+ </emission>
+  </animation>
+
+   
+</PropertyList>

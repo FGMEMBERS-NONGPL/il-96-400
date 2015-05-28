@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<PropertyList>
+    <name>EFB-dlg</name>
+    <layout>vbox</layout>
+
+    <text><label>Airport ID</label></text>
+
+    <hrule/>
+    <input>
+        <legend>ICAO</legend>
+        <x>15</x>
+        <y>30</y>
+        <width>100</width>
+        <height>25</height>
+        <border>2</border>
+        <property>instrumentation/groundradar/id</property>
+        <live>true</live>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+    </input>
+
+  <button>
+    <legend>Close</legend>
+    <default>true</default>
+    <key>Esc</key>
+    <padding>10</padding>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+    <binding>
+      <command>dialog-close</command>
+    </binding>
+  </button>
+
+</PropertyList>

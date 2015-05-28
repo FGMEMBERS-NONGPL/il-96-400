@@ -1,0 +1,76 @@
+<!-- il-96-400
+
+-->
+
+<PropertyList>
+
+    <model>
+        <name>PFD1</name>
+        <path>Aircraft/il-96-400/Models/Instruments/PFD/PFD.xml</path>
+        <offsets>
+            <x-m>-23.57300</x-m>
+            <y-m>-0.66400</y-m>
+            <z-m>0.37100</z-m>
+            <pitch-deg>-10</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <name>PFD2</name>
+        <path>Aircraft/il-96-400/Models/Instruments/PFD/PFD.xml</path>
+        <offsets>
+            <x-m>-23.5730</x-m>
+            <y-m>0.6940</y-m>
+            <z-m>0.37100</z-m>
+            <pitch-deg>-10</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <name>ND1</name>
+        <path>Aircraft/il-96-400/Models/Instruments/MFD/ND.xml</path>
+        <offsets>
+            <x-m>-23.556</x-m>
+            <y-m>-0.4440</y-m>
+            <z-m>0.385</z-m>
+            <pitch-deg>-10</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <name>ND2</name>
+        <path>Aircraft/il-96-400/Models/Instruments/MFD/ND.xml</path>
+        <offsets>
+            <x-m>-23.556</x-m>
+            <y-m>0.4720</y-m>
+            <z-m>0.384</z-m>
+            <pitch-deg>-10</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <name>EICAS</name>
+        <path>Aircraft/il-96-400/Models/Instruments/EICAS/eicas.xml</path>
+        <offsets>
+            <x-m>-23.566</x-m>
+            <y-m>-0.1100</y-m>
+            <z-m>0.3320</z-m>
+            <pitch-deg>-10</pitch-deg>
+        </offsets>
+    </model>
+    
+     <model>
+        <name>EICAS</name>
+        <path>Aircraft/il-96-400/Models/Instruments/NDB/ndb.xml</path>
+        <offsets>
+            <x-m>-23.566</x-m>
+            <y-m>0.124</y-m>
+            <z-m>0.3320</z-m>
+            <heading-deg>0</heading-deg>
+           <roll-deg>180</roll-deg>
+           <pitch-deg>10</pitch-deg>
+        </offsets>
+    </model>
+
+
+</PropertyList>
