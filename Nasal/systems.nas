@@ -1,5 +1,5 @@
 # il-96-400 systems
-#Syd Adams
+#Syd Adams-Xsaint
 #
 
 
@@ -184,7 +184,7 @@ var Engine = {
     new : func(eng_num){
         m = { parents : [Engine]};
         m.fdensity = getprop("consumables/fuel/tank/density-ppg");
-        if(m.fdensity ==nil)m.fdensity=6.73;
+        if(m.fdensity ==nil)m.fdensity=6.90;
         m.eng = props.globals.getNode("engines/engine["~eng_num~"]",1);
         m.running = m.eng.getNode("running",1);
         m.running.setBoolValue(0);
@@ -369,10 +369,10 @@ stall_horn = func{
 var Startup = func{
 setprop("controls/electric/engine[0]/generator",1);
 setprop("controls/electric/engine[1]/generator",1);
-setprop("controls/electric/engine[0]/bus-tie",1);
-setprop("controls/electric/engine[1]/bus-tie",1);
 setprop("controls/electric/engine[2]/generator",1);
 setprop("controls/electric/engine[3]/generator",1);
+setprop("controls/electric/engine[0]/bus-tie",1);
+setprop("controls/electric/engine[1]/bus-tie",1);
 setprop("controls/electric/engine[2]/bus-tie",1);
 setprop("controls/electric/engine[3]/bus-tie",1);
 setprop("controls/electric/APU-generator",1);
@@ -403,10 +403,10 @@ setprop("controls/fuel/tank[2]/boost-pump[1]",1);
 var Shutdown = func{
 setprop("controls/electric/engine[0]/generator",0);
 setprop("controls/electric/engine[1]/generator",0);
-setprop("controls/electric/engine[0]/bus-tie",0);
-setprop("controls/electric/engine[1]/bus-tie",0);
 setprop("controls/electric/engine[2]/generator",0);
 setprop("controls/electric/engine[3]/generator",0);
+setprop("controls/electric/engine[0]/bus-tie",0);
+setprop("controls/electric/engine[1]/bus-tie",0);
 setprop("controls/electric/engine[2]/bus-tie",0);
 setprop("controls/electric/engine[3]/bus-tie",0);
 setprop("controls/electric/APU-generator",0);

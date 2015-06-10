@@ -36,7 +36,11 @@
 
   <animation>
     <type>noshadow</type>
-    <object-name>vitre</object-name>
+    <object-name>HDGneedle2</object-name>
+    <object-name>HDGneedle</object-name>
+    <object-name>cmpscard</object-name>
+    <object-name>bearing-bug</object-name>
+    
   </animation>
 
   <animation>
@@ -64,8 +68,8 @@
     <object-name>cache</object-name>
     <object-name>off-flag</object-name>
     <emission>
-      <red>   0.8 </red>
-      <green> 0.7 </green>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
       <blue>  0.5 </blue>
       <factor-prop>/controls/lighting/instruments-norm</factor-prop>
     </emission>

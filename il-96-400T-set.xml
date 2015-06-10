@@ -1,0 +1,497 @@
+<PropertyList>
+
+    <sim>
+        <description>Illyushin IL-96-400T Cargo</description>
+        <author>Xsaint-Petar Jedvaj</author>
+        <status>Prod</status>
+        <aircraft-version>3.0</aircraft-version>
+        <flight-model>yasim</flight-model>
+        <aero>il-96-400T</aero>
+        <fuel-fraction>0.75</fuel-fraction>
+        <startup>
+            <splash-texture>Aircraft/il-96-400/splash2.png</splash-texture>
+        </startup>
+
+        <model>
+            <path>Aircraft/il-96-400/Models/il-96-400T.xml</path>
+            <livery>
+                <file type="string">BA</file>
+            </livery>
+            <lights>
+                <file type="string">BA</file>
+            </lights>
+            <armrest type="double">0</armrest>
+        </model>
+
+        <view n="0">
+            <name>Pilot View</name>
+            <type>lookfrom</type>
+            <internal type="bool">true</internal>
+            <config>
+                <x-offset-m type="double">-0.37</x-offset-m> 
+                <y-offset-m type="double">0.80</y-offset-m>   
+                <z-offset-m type="double">-22.84</z-offset-m>  
+                <pitch-offset-deg>-13.5</pitch-offset-deg> 
+                <default-field-of-view-deg type="double">77.7</default-field-of-view-deg>
+                <limits>
+                    <enabled type="bool">true</enabled>
+                    <left>
+                        <heading-max-deg type="double">140</heading-max-deg>
+                        <x-offset-max-m type="double">0.35</x-offset-max-m>
+                        <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+                    </left>
+                    <right>
+                        <heading-max-deg type="double">160</heading-max-deg>
+                        <x-offset-max-m type="double">0.25</x-offset-max-m>
+                        <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+                    </right>
+                </limits>
+            </config>
+        </view>
+
+    <view n="100">
+        <name>CoPilot View</name>
+        <enabled type="bool">true</enabled>
+        <type>lookfrom</type>
+        <internal type="bool">true</internal>
+        <config>
+            <from-model type="bool">true</from-model>
+            <from-model-idx type="int">0</from-model-idx>
+            <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+            <default-field-of-view-deg type="double">77.7</default-field-of-view-deg>
+            <default-pitch-deg type="double">0</default-pitch-deg>
+            <default-heading-deg type="double">0</default-heading-deg>
+            <front-direction-deg type="double">0</front-direction-deg>
+            <front-left-direction-deg type="double">45</front-left-direction-deg>
+            <left-direction-deg type="double">90</left-direction-deg>
+            <back-left-direction-deg type="double">135</back-left-direction-deg>
+            <back-direction-deg type="double">180</back-direction-deg>
+            <back-right-direction-deg type="double">225</back-right-direction-deg>
+            <right-direction-deg type="double">270</right-direction-deg>
+            <front-right-direction-deg type="double">315</front-right-direction-deg>
+            <dynamic-view type="bool">true</dynamic-view>
+            <x-offset-m type="double">0.37</x-offset-m>
+            <y-offset-m type="double">0.8</y-offset-m>
+            <z-offset-m type="double">-22.84</z-offset-m>
+            <pitch-offset-deg>-13.5</pitch-offset-deg>
+            <limits>
+                <enabled type="bool">true</enabled>
+                <left>
+                  <heading-max-deg type="double">140</heading-max-deg>
+                  <x-offset-max-m type="double">0.25</x-offset-max-m>
+                  <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+                </left>
+                <right>
+                    <heading-max-deg type="double">160</heading-max-deg>
+                    <x-offset-max-m type="double">0.35</x-offset-max-m>
+                    <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+                </right>
+            </limits>
+        </config>
+    </view>
+
+    <airport>
+        <runways>
+            <start-offset-m>50</start-offset-m>
+        </runways>
+    </airport>
+
+        <chase-distance-m>-100</chase-distance-m>
+
+        <flaps>
+            <setting>0.000</setting>  <!-- flaps up -->
+            <setting>0.033</setting>  <!-- flaps 1  -->
+            <setting>0.166</setting>  <!-- flaps 5  -->
+            <setting>0.500</setting>  <!-- flaps 15 -->
+            <setting>0.666</setting>  <!-- flaps 20 -->
+            <setting>0.833</setting>  <!-- flaps 25 -->
+            <setting>1.000</setting>  <!-- flaps 30 -->
+        </flaps>
+
+        <systems>
+        <path>Aircraft/il-96-400/Systems/systems.xml</path>
+            <autopilot>
+                <path>Aircraft/il-96-400/Systems/il-96-400-autopilot.xml</path>
+            </autopilot>
+        </systems>
+
+        <instrumentation>
+            <path>Aircraft/il-96-400/Systems/instrumentation.xml</path>
+        </instrumentation>
+
+        <sound>
+            <path>Aircraft/il-96-400/Sounds/il-96-400-sound.xml</path>
+            <switch type = "bool">0</switch>
+            <stall-horn type="bool">0</stall-horn>
+        </sound>
+
+        <hud>
+            <enable3d>false</enable3d>
+        </hud>
+
+        <virtual-cockpit archive="y">true</virtual-cockpit>
+        <allow-toggle-cockpit>true</allow-toggle-cockpit>
+
+        <help>
+            <title>IL-96T</title>
+            <key>
+                <name>Delete</name>
+                <desc>toggle thrust reversers</desc>
+            </key>
+            <key>
+                <name>Ctrl-b</name>
+                <desc>toggle speed brakes</desc>
+            </key>
+        </help>
+
+        <menubar>
+            <default>
+                <menu n="3">
+                    <item n="0">
+                    <label>Autopilot Settings</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>dialogs.ap_settings.open()</script>
+                        </binding>
+                    </item>
+                </menu>
+                <menu n="5">
+                    <item n="1">
+                    <label>Radio Stack</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>dialogs.Radio.open()</script>
+                        </binding>
+                    </item>
+                </menu>
+                <menu n="100">
+                    <label>IL-96T</label>
+                    <enabled type="bool">true</enabled>
+                    <item>
+                        <label>Autostart</label>
+                        <binding>
+                            <command>property-toggle</command>
+                            <property>sim/model/start-idling</property>
+                        </binding>
+                    </item>
+                    <item >
+                        <label>Pushback</label>
+                        <name>pushback</name>
+                        <binding>
+                            <command>dialog-show</command>
+                            <dialog-name>pushback</dialog-name>
+                        </binding>
+                    </item>
+                    <item>
+                        <label>Select Livery</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>aircraft.livery.dialog.toggle()</script>
+                        </binding>
+                    </item>
+                    <item>
+                        <label>EFB</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>dialogs.EFB.toggle();</script>
+                        </binding>
+                    </item>
+                </menu>
+            </default>
+        </menubar>
+
+        <weight n="0">
+            <name>Crew</name>
+            <weight-lb>360</weight-lb>
+            <max-lb>360</max-lb>
+            <min-lb>180</min-lb>
+        </weight>
+
+        <weight n="1">
+            <name>Cargo</name>
+            <weight-lb>100000</weight-lb>
+            <max-lb>202643</max-lb>
+            <min-lb>0</min-lb>
+        </weight>
+
+    <multiplay>
+        <generic>
+            <int n="0" alias="/systems/electrical/outputs/strobe"/>
+            <int n="1" alias="/systems/electrical/outputs/beacon"/>
+            <int n="2" alias="/systems/electrical/outputs/taxi-lights"/>
+            <int n="3" alias="/systems/electrical/outputs/logo-lights"/>
+            <int n="4" alias="/systems/electrical/outputs/landing-light[0]"/>
+            <int n="5" alias="/systems/electrical/outputs/landing-light[1]"/>
+            <int n="6" alias="/systems/electrical/outputs/landing-light[2]"/>
+            <int n="7" alias="/systems/electrical/outputs/nav-lights"/>
+
+            <float n="0" alias="/gear/gear[0]/compression-m"/>
+            <float n="1" alias="/gear/gear[1]/compression-m"/>
+            <float n="2" alias="/gear/gear[2]/compression-m"/>
+            <float n="3" alias="/gear/gear[3]/compression-m"/>
+            <float n="4" alias="/gear/gear[4]/compression-m"/>
+            <float n="5" alias="/surface-positions/speedbrake-norm"/>
+            <float n="6" alias="/surface-positions/reverser-norm"/>
+            <string  alias="/sim/multiplay/callsign"/>
+        </generic>
+    </multiplay>
+
+    </sim>
+
+    <gear>
+        <gear n="0">
+            <tyre-smoke type="int">0</tyre-smoke>
+            <sprayspeed-ms type="double">0</sprayspeed-ms>
+            <spray-density type="double">0</spray-density>
+            <caster-angle-deg-damped type="double">0</caster-angle-deg-damped>
+        </gear>
+        <gear n="1">
+            <tyre-smoke type="int">0</tyre-smoke>
+            <sprayspeed-ms type="double">0</sprayspeed-ms>
+            <spray-density type="double">0</spray-density>
+        </gear>
+        <gear n="2">
+            <tyre-smoke type="int">0</tyre-smoke>
+            <sprayspeed-ms type="double">0</sprayspeed-ms>
+            <spray-density type="double">0</spray-density>
+        </gear>
+        <gear n="3">
+            <tyre-smoke type="int">0</tyre-smoke>
+            <sprayspeed-ms type="double">0</sprayspeed-ms>
+            <spray-density type="double">0</spray-density>
+        </gear>
+    </gear>
+
+    <consumables>
+        <fuel>
+            <tank n="0"><name>LH Main</name></tank>
+            <tank n="1"><name>Center</name></tank>
+            <tank n="2"><name>RH Main</name></tank>
+        </fuel>
+    </consumables>
+
+ <input>
+        <keyboard>
+            <key n="127">
+                <name>Delete</name>
+                <desc>Toggle Reversers</desc>
+                <binding>
+                    <command>property-toggle</command>
+                    <property>controls/engines/engine[0]/reverser</property>
+                </binding>
+                <binding>
+                    <command>property-toggle</command>
+                    <property>controls/engines/engine[1]/reverser</property>
+                </binding>
+                 <binding>
+                    <command>property-toggle</command>
+                    <property>controls/engines/engine[2]/reverser</property>
+                </binding>
+                <binding>
+                    <command>property-toggle</command>
+                    <property>controls/engines/engine[3]/reverser</property>
+                </binding>
+            </key>
+            <key n="267">
+                <name>F11</name>
+                <desc>Pop up autopilot dialog</desc>
+                <binding>
+                    <command>nasal</command>
+                    <script>dialogs.ap_settings.toggle()</script>
+                </binding>
+            </key>
+            <key n="268">
+                <name>F12</name>
+                <desc>Radio Stack</desc>
+                <binding>
+                    <command>nasal</command>
+                    <script>dialogs.Radio.open()</script>
+                </binding>
+            </key>
+            <key n="1">
+                <name>Ctrl-A</name>
+                <desc>Toggle autopilot altitude lock</desc>
+                <binding>
+                    <command>property-toggle</command>
+                    <property>instrumentation/afds/inputs/alt-hold</property>
+                </binding>
+            </key>
+             <key n="7">
+                <name>Ctrl-G</name>
+                <desc>Toggle autopilot glide slope lock</desc>
+                <binding>
+                    <command>property-toggle</command>
+                    <property>instrumentation/afds/inputs/app-hold</property>
+                </binding>
+            </key>
+            <key n="8">
+                <name>Ctrl-H</name>
+                <desc>Toggle autopilot heading lock</desc>
+                <binding>
+                    <command>property-toggle</command>
+                    <property>instrumentation/afds/inputs/hdg-hold</property>
+                </binding>
+            </key>
+            <key n="14">
+                <name>Ctrl-N</name>
+                <desc>Toggle LNAV lock</desc>
+                <binding>
+                    <command>property-toggle</command>
+                    <property>instrumentation/afds/inputs/lnav-hold</property>
+                </binding>
+            </key>
+            <key n="16">
+                <name>Ctrl-P</name>
+                <desc>Toggle VS</desc>
+                <binding>
+                    <command>property-toggle</command>
+                    <property>instrumentation/afds/inputs/vs-fpa-hold</property>
+                </binding>
+            </key>
+            <key n="19">
+                <name>Ctrl-S</name>
+                <desc>Toggle autothrottle</desc>
+                <binding>
+                    <command>property-toggle</command>
+                    <property>instrumentation/afds/inputs/at-hold</property>
+                </binding>
+            </key>
+        </keyboard>
+    </input>
+
+    <instrumentation>
+        <radar>
+            <switch type="string" archive="y">on</switch>
+            <mode-control type="int" archive="y">1</mode-control>
+            <display-mode>plan</display-mode>
+            <display-controls>
+                <WX type="bool" archive="y">false</WX>
+                <pos type="bool" archive="y">true</pos>
+                <data type="bool" archive="y">true</data>
+                <symbol type="bool" archive="y">true</symbol>
+                <rotate type="bool" archive="y">true</rotate>
+            </display-controls>
+            <serviceable type="bool">true</serviceable>
+            <range type="int" archive="y">10</range>
+            <reference-range-nm type="double" archive="y">640</reference-range-nm>
+            <mode type="string" archive="y">WX</mode>
+            <font>
+                <color>
+                    <red type="float">0.7</red>
+                    <green type="float">0.7</green>
+                    <blue type="float">0.7</blue>
+                    <alpha type="float">1</alpha>
+                </color>
+                <name type="string" archive="y">helvetica_bold.txf</name>
+                <size type="float">8</size>
+                <line-spacing type="float">0.2</line-spacing>
+            </font>
+            <lightning type="bool" archive="y">true</lightning>
+            <display-mode type="string" archive="y">arc</display-mode>
+            <radar-texture-path type="string" archive="y">Aircraft/il-96-400/Models/Instruments/MFD/od_wxradar.png</radar-texture-path>
+            <echo-texture-path type="string" archive="y">Aircraft/il-96-400/Models/Instruments/MFD/wxecho.png</echo-texture-path>
+            <minimized type="bool" archive="y">false</minimized>
+            <heading-marker type="bool" archive="y">true</heading-marker>
+            <limit-deg type="int">360</limit-deg>
+        </radar>
+        <groundradar>
+            <id type="string">KSFO</id>
+            <range type="double">1.2</range>
+        </groundradar>
+        <mk-viii>
+            <serviceable>1</serviceable>
+            <speaker>
+                <max-dist>2</max-dist>
+                <reference-dist>1</reference-dist>
+                <volume>0.4</volume>
+            </speaker>
+        </mk-viii>
+        <adf n="1">
+            <serviceable type="bool">1</serviceable>
+            <mode>adf</mode>
+            <frequencies>
+                <selected-khz>341</selected-khz>
+                <standby-khz>379</standby-khz>
+            </frequencies>
+        </adf>
+        <efis>
+            <eicas>
+                <msg n="0">
+                    <text>TESTING TESTING</text>
+                    <red>0.8</red>
+                    <green>0.4</green>
+                    <blue>0.2</blue>
+                    <alpha>0.5</alpha>
+                </msg>
+            </eicas>
+        </efis>
+        <rmu>
+            <unit n="0">
+                <source-index type="int">0</source-index>
+                <source type="string">comm1</source>
+                </unit>
+            <unit n="1">
+                <source-index type="int">2</source-index>
+                <source type="string">nav1</source>
+            </unit>
+            <unit n="2">
+                <source-index type="int">5</source-index>
+                <source type="string">adf</source>
+            </unit>
+        </rmu>
+        <nav>
+            <frequencies>
+                <standby-mhz n="1" type="double">109.50</standby-mhz>
+                <standby-mhz n="2" type="double">109.55</standby-mhz>
+                <standby-mhz n="3" type="double">110.10</standby-mhz>
+                <standby-mhz n="4" type="double">111.70</standby-mhz>
+            </frequencies>
+        </nav>
+        <nav n="1">
+            <frequencies>
+                <standby-mhz n="1" type="double">109.50</standby-mhz>
+                <standby-mhz n="2" type="double">109.55</standby-mhz>
+                <standby-mhz n="3" type="double">110.10</standby-mhz>
+                <standby-mhz n="4" type="double">111.70</standby-mhz>
+            </frequencies>
+        </nav>
+    </instrumentation>
+
+    <controls>
+        <gear>
+            <brake-parking type="bool">1</brake-parking>
+        </gear>
+        <flight>
+            <speedbrake-lever type="int">0</speedbrake-lever>
+        </flight>
+    </controls>
+
+    <autopilot>
+        <autobrake>
+            <engaged type="bool">0</engaged>
+        </autobrake>
+    </autopilot>
+    
+    
+      
+    
+
+    <nasal>
+        <il96>
+            <file>Aircraft/il-96-400/Nasal/Electrical.nas</file>
+            <file>Aircraft/il-96-400/Nasal/flightdirector.nas</file>
+	    <file>Aircraft/il-96-400/Nasal/light.nas</file>
+	    <file>Aircraft/il-96-400/Nasal/systems.nas</file>
+            <file>Aircraft/il-96-400/Nasal/systemst.nas</file>
+            <file>Aircraft/il-96-400/Nasal/AFDS.nas</file>
+            <file>Aircraft/il-96-400/Nasal/tyresmoke.nas</file>
+        </il96>
+        
+        <dialogs>
+            <file>Aircraft/il-96-400/Nasal/dialogs.nas</file>
+        </dialogs>
+    </nasal>
+
+ 
+
+</PropertyList>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- The Livery and Lights file for cubana is wrong, please use Aeroflot's files as a template-->
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">Qantas Airways</name>
+            <texture>Liveries/qantas.png</texture>
+        </livery>
+        <lights>
+            <texture>Liveries/qantas-lights.png</texture>
+        </lights>
+    </model>
+</sim>
+</PropertyList>

@@ -1,10 +1,10 @@
 <PropertyList>
 
     <sim>
-        <description>Illushin il-96-400</description>
+        <description>Illyushin IL-96-400</description>
         <author>Xsaint-Petar Jedvaj</author>
-        <status>Test Package </status>
-        <aircraft-version>1.1A</aircraft-version>
+        <status>Prod</status>
+        <aircraft-version>3.0</aircraft-version>
         <flight-model>yasim</flight-model>
         <aero>il-96-400</aero>
         <fuel-fraction>0.75</fuel-fraction>
@@ -28,11 +28,11 @@
             <type>lookfrom</type>
             <internal type="bool">true</internal>
             <config>
-                <x-offset-m type="double">-0.37</x-offset-m> 
-                <y-offset-m type="double">0.80</y-offset-m>   
-                <z-offset-m type="double">-22.84</z-offset-m>  
+                <x-offset-m type="double">-0.37</x-offset-m> <!--L/R-->
+                <y-offset-m type="double">0.75</y-offset-m>   <!--U/D-->
+                <z-offset-m type="double">-22.94</z-offset-m>  <!--F/B-->
                 <pitch-offset-deg>-13.5</pitch-offset-deg> 
-                <default-field-of-view-deg type="double">77.7</default-field-of-view-deg>
+                <default-field-of-view-deg type="double">84.7</default-field-of-view-deg>
                 <limits>
                     <enabled type="bool">true</enabled>
                     <left>
@@ -202,16 +202,15 @@
 
         <weight n="0">
             <name>Crew</name>
-            <weight-lb>540</weight-lb>
-            <max-lb>720</max-lb>
-            <min-lb>360</min-lb>
+            <weight-lb>360</weight-lb>
+            <max-lb>360</max-lb>
+            <min-lb>120</min-lb>
         </weight>
 
         <weight n="1">
-        <!--  315 pax max @ 180 lbs-->
             <name>Pax</name>
-            <weight-lb>45000</weight-lb>
-            <max-lb>56700</max-lb>
+            <weight-lb>35000</weight-lb>
+            <max-lb>44100</max-lb>
             <min-lb>0</min-lb>
         </weight>
 
@@ -480,6 +479,7 @@
     <nasal>
         <il96>
             <file>Aircraft/il-96-400/Nasal/Electrical.nas</file>
+	    <file>Aircraft/il-96-400/Nasal/light.nas</file>
             <file>Aircraft/il-96-400/Nasal/flightdirector.nas</file>
             <file>Aircraft/il-96-400/Nasal/systems.nas</file>
             <file>Aircraft/il-96-400/Nasal/AFDS.nas</file>

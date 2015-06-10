@@ -1,6 +1,7 @@
-<!--il 96 400 yasim
+<!--il 96 400 yasim , FDM by Xsaint-->
 
--->
+
+
 <airplane mass="269383">
 
 <!-- Approach configuration -->
@@ -31,7 +32,7 @@
 
 <cockpit x="22.72" y="0.0" z="1.01"/>
 
-<!-- To Do-->
+
 <fuselage ax="25.36" ay="0" az="-0.64" bx="-20.0" by="0.00" bz="0.0"
     width="6.2" taper="0.0" midpoint="1.0"/>
 <fuselage ax="16.231" ay="0" az="0" bx="-20.0" by="0.00" bz="0.0"
@@ -47,7 +48,7 @@
 <fuselage ax="2.95" ay="-10.31" az="-2.71" bx="-5.78" by="-10.31" bz="-2.71"
     width="3.6" taper="1.0"/> 
 
-<!-- To Do-->
+
 <wing x="-4.77" y="-1.90" z="-1.66" length="30.05" chord="10.0" sweep="30.0"
       taper="0.14" dihedral="7" camber="0.051" incidence="0">
     <stall aoa="12" width="12" peak="1.5"/>
@@ -90,59 +91,59 @@
 </vstab>
 
 
-<jet x="-6.72" y="15.95"  z="-1.83" mass="6490" thrust="38280" spool-time="3"
-egt="940" tsfc="0.16 " n1-idle="45" n1-max="105" n2-idle="70" n2-max="108">
+<jet x="-6.72" y="15.95"  z="-1.83" mass="6490" thrust="38500" spool-time="3"
+egt="890" tsfc="0.485 " n1-idle="45" n1-max="105" n2-idle="70" n2-max="108">
   <control-input axis="/controls/engines/engine[0]/throttle-lever" control="THROTTLE" src0="0.2" dst0="0" src1="1" dst1="1"/>
   <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
   <control-input axis="/controls/engines/engine[0]/reverser" control="REVERSE_THRUST"/>
     <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[0]"/>
     <control-speed control="REVERSE_THRUST" transition-time="2"/>
-<actionpt x="-2.75" y="15.95" z="-1.83"/>
+<actionpt x="-7.48" y="15.95" z="-1.83"/>
 </jet>
 
 
 
-<jet x="1.29" y="10.31"  z="-2.57" mass="6490" thrust="38280" spool-time="3"
-egt="940" tsfc="0.16 " n1-idle="45" n1-max="105" n2-idle="70" n2-max="108">
+<jet x="1.29" y="10.31"  z="-2.57" mass="6490" thrust="38500" spool-time="3"
+egt="890" tsfc="0.485 " n1-idle="45" n1-max="105" n2-idle="70" n2-max="108">
   <control-input axis="/controls/engines/engine[1]/throttle-lever" control="THROTTLE" src0="0.2" dst0="0" src1="1" dst1="1"/>
   <control-input axis="/controls/engines/engine[1]/mixture" control="MIXTURE"/>
   <control-input axis="/controls/engines/engine[1]/reverser" control="REVERSE_THRUST"/>
     <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[0]"/>
     <control-speed control="REVERSE_THRUST" transition-time="2"/>
-<actionpt x="2.58" y="10.31" z="-2.63"/>
+<actionpt x="-3.47" y="10.31" z="-2.63"/>
 </jet>
 
 
 
-<jet x="1.29" y="-10.31"  z="-2.57" mass="6490" thrust="38280"  spool-time="3"
-egt="940" tsfc="0.16" n1-idle="45" n1-max="105" n2-idle="70" n2-max="108">
+<jet x="1.29" y="-10.31"  z="-2.57" mass="6490" thrust="38500"  spool-time="3"
+egt="890" tsfc="0.485" n1-idle="45" n1-max="105" n2-idle="70" n2-max="108">
   <control-input axis="/controls/engines/engine[3]/throttle-lever" control="THROTTLE" src0="0.2" dst0="0" src1="1" dst1="1"/>
   <control-input axis="/controls/engines/engine[3]/mixture" control="MIXTURE"/>
   <control-input axis="/controls/engines/engine[3]/reverser" control="REVERSE_THRUST"/>
     <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[1]"/>
     <control-speed control="REVERSE_THRUST" transition-time="2"/>
-<actionpt x="2.58" y="-10.31" z="-2.63"/>
+<actionpt x="-3.47" y="-10.31" z="-2.63"/>
 </jet>
 
 
 
-<jet x="-6.72" y="-15.95"  z="-1.83" mass="6490" thrust="38280"  spool-time="3"
-egt="940" tsfc="0.16" n1-idle="45" n1-max="105" n2-idle="70" n2-max="108">
+<jet x="-6.72" y="-15.95"  z="-1.83" mass="6490" thrust="38500"  spool-time="3"
+egt="890" tsfc="0.485" n1-idle="45" n1-max="105" n2-idle="70" n2-max="108">
   <control-input axis="/controls/engines/engine[2]/throttle-lever" control="THROTTLE" src0="0.2" dst0="0" src1="1" dst1="1"/>
   <control-input axis="/controls/engines/engine[2]/mixture" control="MIXTURE"/>
   <control-input axis="/controls/engines/engine[2]/reverser" control="REVERSE_THRUST"/>
     <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[1]"/>
     <control-speed control="REVERSE_THRUST" transition-time="2"/>
-<actionpt x="-2.75" y="-15.95" z="-1.83"/>
+<actionpt x="-7.48" y="-15.95" z="-1.83"/>
 </jet>
 
 
 
 
 
-<!--Gears-->
 
-<gear x="19.28"  y="0.00" z="-5.55"
+
+<gear x="15.77"  y="0.00" z="-5.55"
       compression="0.8" spring="1.8" damp="1" sfric="1.5" dfric="1.0">
   <control-input axis="/controls/flight/rudder" control="STEER" square="true"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -182,9 +183,9 @@ egt="940" tsfc="0.16" n1-idle="45" n1-max="105" n2-idle="70" n2-max="108">
 
 
 
-<tank x="-3.54" y="6.62" z="-1.25" jet="true" capacity="50000"/>
-<tank x="-3.54" y="0" z="-0.28" jet="true" capacity="154192"/>
-<tank x="-3.54" y="-6.62" z="-1.25" jet="true" capacity="50000"/>
+<tank x="-3.54" y="6.62" z="-1.25" jet="true" capacity="61910"/>
+<tank x="-3.54" y="0" z="-0.28" jet="true" capacity="192000"/>
+<tank x="-3.54" y="-6.62" z="-1.25" jet="true" capacity="61910"/>
 
 <weight x="22.0" y="0" z="0" mass-prop="/sim/weight[0]/weight-lb"/>
 <weight x="-17.0" y="0" z="0" mass-prop="/sim/weight[0]/weight-lb"/>

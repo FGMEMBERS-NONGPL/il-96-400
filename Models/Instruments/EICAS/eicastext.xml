@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-
+<!-- xsaint, creative commons-->
 
 <PropertyList>
     <name>EICAS</name>
@@ -93,6 +93,36 @@
         </transformations>
     </layer>
 
+
+<layer>
+        <name>EPRtxt2</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>5</point-size>
+        <color>
+            <red>0.25</red>
+            <green>0.5</green>
+            <blue>0.7</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>literal</type>
+                <text>EPR</text>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
+                <offset>-67</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>-46</offset>
+            </transformation>
+        </transformations>
+    </layer>
+
+
     <layer>
         <name>N1</name>
         <type>text</type>
@@ -117,6 +147,36 @@
             <transformation>
                 <type>y-shift</type>
                 <offset>10</offset>
+            </transformation>
+        </transformations>
+    </layer>
+
+
+
+ <layer>
+        <name>N2</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>5</point-size>
+        <color>
+            <red>0.25</red>
+            <green>0.5</green>
+            <blue>0.7</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>literal</type>
+                <text>N1</text>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
+                <offset>-67</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>-100</offset>
             </transformation>
         </transformations>
     </layer>
@@ -268,7 +328,8 @@
         </transformations>
     </layer>
 
-    <layer>
+
+   <layer>
         <name>epr02</name>
         <type>text</type>
         <font>arial_black</font>
@@ -288,11 +349,70 @@
         <transformations>
             <transformation>
                 <type>x-shift</type>
+                <offset>-93</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>-22</offset>
+            </transformation>
+        </transformations>
+    </layer>
+
+
+    <layer>
+        <name>epr03</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>6</point-size>
+        <color>
+            <red>0.7</red>
+            <green>0.7</green>
+            <blue>0.7</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>number-value</type>
+                <property>engines/engine[2]/epr</property>
+                <format>%1.3f</format>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
                 <offset>-27</offset>
             </transformation>
             <transformation>
                 <type>y-shift</type>
                 <offset>90</offset>
+            </transformation>
+        </transformations>
+    </layer>
+
+<layer>
+        <name>epr04</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>6</point-size>
+        <color>
+            <red>0.7</red>
+            <green>0.7</green>
+            <blue>0.7</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>number-value</type>
+                <property>engines/engine[3]/epr</property>
+                <format>%1.3f</format>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
+                <offset>-27</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>-22</offset>
             </transformation>
         </transformations>
     </layer>
@@ -327,7 +447,9 @@
         </transformations>
     </layer>
 
-    <layer>
+
+
+ <layer>
         <name>n102</name>
         <type>text</type>
         <font>arial_black</font>
@@ -347,6 +469,35 @@
         <transformations>
             <transformation>
                 <type>x-shift</type>
+                <offset>-93</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>-77</offset>
+            </transformation>
+        </transformations>
+    </layer>
+
+    <layer>
+        <name>n103</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>6</point-size>
+        <color>
+            <red>0.7</red>
+            <green>0.7</green>
+            <blue>0.7</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>number-value</type>
+                <property>engines/engine[2]/rpm</property>
+                <format>%3.1f</format>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
                 <offset>-27</offset>
             </transformation>
             <transformation>
@@ -358,9 +509,467 @@
     
 
 
+ <layer>
+        <name>n104</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>6</point-size>
+        <color>
+            <red>0.7</red>
+            <green>0.7</green>
+            <blue>0.7</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>number-value</type>
+                <property>engines/engine[3]/rpm</property>
+                <format>%3.1f</format>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
+                <offset>-27</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>-77</offset>
+            </transformation>
+        </transformations>
+    </layer>
+    
+<!-- IL96-->
+<layer>
+        <name>ParkBrake</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>6.5</point-size>
+        <color>
+            <red>0.25</red>
+            <green>1.0</green>
+            <blue>0.25</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>literal</type>
+                <text>SYSTEM CHECKS</text>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
+                <offset>27</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>104</offset>
+            </transformation>
+        </transformations>
+    </layer>
 
+ <layer>
+        <name>ParkBrake</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>6</point-size>
+        <color>
+            <red>0.25</red>
+            <green>0.5</green>
+            <blue>0.7</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>literal</type>
+                <condition>
+                <property>controls/gear/brake-parking</property>
+                <value>1</value>
+                </condition>
+                <text>Parking Brakes</text>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
+                <offset>27</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>92</offset>
+            </transformation>
+        </transformations>
+    </layer>
 
-
+ <layer>
+        <name>SpeedBrake</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>6</point-size>
+        <color>
+            <red>0.25</red>
+            <green>0.5</green>
+            <blue>0.7</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>literal</type>
+                <condition>
+                <property>controls/flight/speedbrake</property>
+                <value>1</value>
+                </condition>
+                <text>Speed Brakes</text>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
+                <offset>27</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>80</offset>
+            </transformation>
+        </transformations>
+    </layer>
+    
+    <layer>
+        <name>Reverser</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>6</point-size>
+        <color>
+            <red>0.25</red>
+            <green>0.5</green>
+            <blue>0.7</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>literal</type>
+                <condition>
+                <property>controls/engines/engine/reverser</property>
+                <value>1</value>
+                </condition>
+                <text>Reverser Active</text>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
+                <offset>27</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>68</offset>
+            </transformation>
+        </transformations>
+    </layer>
+    
+    
+    
+   <layer>
+        <name>CAT1</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>6</point-size>
+        <color>
+            <red>0.25</red>
+            <green>1.0</green>
+            <blue>0.25</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>literal</type>
+                <condition>
+                <greater-than-equals>
+                <property>/environment/visibility-m</property>
+                <value>800</value>
+                </greater-than-equals>
+                </condition>
+                <text>CAT 1</text>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
+                <offset>27</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>56</offset>
+            </transformation>
+        </transformations>
+    </layer>  
+    
+    
+    <layer>
+        <name>CAT3A</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>6</point-size>
+        <color>
+            <red>1.0</red>
+            <green>1.0</green>
+            <blue>0.0</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>literal</type>
+                <condition>
+                <and>
+                <greater-than>
+                <property>/environment/visibility-m</property>
+                <value>101</value>
+                </greater-than>
+                
+                <and>
+                <less-than-equals>
+                <property>/environment/visibility-m</property>
+                <value>200</value>
+                </less-than-equals>
+                
+                </and>
+                </and>
+                </condition>
+                <text>CAT 3A</text>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
+                <offset>67</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>56</offset>
+            </transformation>
+        </transformations>
+    </layer>  
+    
+    
+    
+    
+    <layer>
+        <name>CAT2</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>6</point-size>
+        <color>
+            <red>0.0</red>
+            <green>0.0</green>
+            <blue>1.0</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>literal</type>
+                <condition>
+                <and>
+                <greater-than>
+                <property>/environment/visibility-m</property>
+                <value>201</value>
+                </greater-than>
+                
+                <and>
+                <less-than-equals>
+                <property>/environment/visibility-m</property>
+                <value>400</value>
+                </less-than-equals>
+                
+                </and>
+                </and>
+                </condition>
+                <text>CAT 2</text>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
+                <offset>27</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>44</offset>
+            </transformation>
+        </transformations>
+    </layer>  
+    
+    
+     <layer>
+        <name>CAT3B</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>6</point-size>
+        <color>
+            <red>1</red>
+            <green>0</green>
+            <blue>0</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>literal</type>
+                <condition>
+                
+                <less-than-equals>
+                <property>/environment/visibility-m</property>
+                <value>100</value>
+                </less-than-equals>
+                
+                
+                </condition>
+                <text>CAT 3B</text>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
+                <offset>67</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>44</offset>
+            </transformation>
+        </transformations>
+    </layer>  
+    
+    
+    
+    
+     <layer>
+        <name>Engine Fail1</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>6</point-size>
+        <color>
+            <red>1</red>
+            <green>0</green>
+            <blue>0</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>literal</type>
+                <condition>
+                <less-than-equals>
+                <property>/engines/engine/rpm</property>
+                <value>40</value>
+                </less-than-equals>
+                </condition>
+                <text>Check Engine 1</text>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
+                <offset>27</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>32</offset>
+            </transformation>
+        </transformations>
+    </layer>
+    
+    <layer>
+        <name>Engine Fail2</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>6</point-size>
+        <color>
+            <red>1</red>
+            <green>0</green>
+            <blue>0</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>literal</type>
+                <condition>
+                <less-than-equals>
+                <property>/engines/engine[1]/rpm</property>
+                <value>40</value>
+                </less-than-equals>
+                </condition>
+                <text>Check Engine   ,2</text>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
+                <offset>27</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>32</offset>
+            </transformation>
+        </transformations>
+    </layer>
+    
+    <layer>
+        <name>Engine Fail3</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>6</point-size>
+        <color>
+            <red>1</red>
+            <green>0</green>
+            <blue>0</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>literal</type>
+                <condition>
+                <less-than-equals>
+                <property>/engines/engine[2]/rpm</property>
+                <value>40</value>
+                </less-than-equals>
+                </condition>
+                <text>Check Engine     ,3</text>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
+                <offset>27</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>32</offset>
+            </transformation>
+        </transformations>
+    </layer>
+    
+    <layer>
+        <name>Engine Fail4</name>
+        <type>text</type>
+        <font>arial_black</font>
+        <point-size>6</point-size>
+        <color>
+            <red>1</red>
+            <green>0</green>
+            <blue>0</blue>
+        </color>
+        <chunks>
+            <chunk>
+                <type>literal</type>
+                <condition>
+                <less-than-equals>
+                <property>/engines/engine[3]/rpm</property>
+                <value>40</value>
+                </less-than-equals>
+                </condition>
+                <text>Check Engine       ,4</text>
+            </chunk>
+        </chunks>
+        <transformations>
+            <transformation>
+                <type>x-shift</type>
+                <offset>27</offset>
+            </transformation>
+            <transformation>
+                <type>y-shift</type>
+                <offset>32</offset>
+            </transformation>
+        </transformations>
+    </layer>
+    
+    
+    
     </layers>
 
 </PropertyList>

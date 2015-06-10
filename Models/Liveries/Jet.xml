@@ -4,11 +4,11 @@
 <sim>
     <model>
         <livery>
-            <name type="string">CUBANA Airlines</name>
-            <texture>Liveries/cubana.png</texture>
+            <name type="string">JET Airways</name>
+            <texture>Liveries/jet.png</texture>
         </livery>
         <lights>
-            <texture>Liveries/cubana-lights.png</texture>
+            <texture>Liveries/jet-lights.png</texture>
         </lights>
     </model>
 </sim>

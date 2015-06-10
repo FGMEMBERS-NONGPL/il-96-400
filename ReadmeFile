@@ -1,43 +1,98 @@
-ReadMe file for IL-96-400 (Test package)
+FGUK's  Il-96-400
+-----------------
+
+http://fguk.eu/index.php/hangar/viewdownload/10-civil-jets/383-il-96-400
+
+![FGUK IMAGE](http://www.fguk.eu/images/jdownloads/screenshots/il-96-400.jpg)
+
+The Ilyushin Il-96 (Russian: Ил-96) is a four-engined long-haul wide-body airliner designed by Ilyushin in the former Soviet Union and manufactured by the Voronezh Aircraft Production Association in Voronezh, Russia.
+
+***
+
+ReadMe file for IL-96-400 V3.0PT (Production)
 
 Thank you for downloading IL-96-400 from www.Unitedfreeworld.com
-A big " Thank You" to Petar Jedvaj for allowing me to use some of his models :)
+A big " Thank You" to Petar Jedvaj for creating the beautiful fuselage :)
 
 
 
 About This Plane
-This is a wide bodied long range airliner which can fly up to 6500NM. It is expected to give one of the best milage for the fuel it burns.
-For more information, pelase follow this link 
 
+IL 96 400
+This is a wide bodied long range airliner which has a range upto 5700NM++. It is expected to give one of the best milage for the fuel it burns.
+The future IL-96-400 are expected to use PS-90A1 engines, this package has been updated for PS-90A1.
+
+IL 96 400T
+This is a cargo version.This plane has higer weight ratio and gives you a lower mileage as compared to above
+
+For more information, pelase follow this link 
 http://en.wikipedia.org/wiki/Ilyushin_Il-96
 
 
+
 About This Package
-This is a test package. There could be some errors from your log, but you can ignore them as they are not important at this point of time.
+In this package it comtains two models
+1)il-96-400 (passenger Version)
+2)il-96-400T (The cargo version)
+This is a production relase package. There could be some errors from your log, but you can ignore them as they are not important at this point of time.
+This package has been tested with full fuel + full pax/cargo weight + full crew weight and it attained a range of 5856NM or Approx. 
+With default configuration it is expected, it will cover bit more NMs.
 
 
-What has been done?
-1)FDM
-2)Model
-3)Animations (Need to further perfect it)
-4)Livery select (need to further perfect it.That is why you do not see doors for now)
+****************************************************
+-------------------IMPORTANT------------------------
+****************************************************
 
-What Needs to be done?
-1)Light effects
+What you need to know? - Weight
+This aircraft may seem "Heavy" for some, until you get used to it.So please handle with care.
+
+What you need to know? -Take off
+Engage some amount of flaps (ie press ] twice on your keyboard) , disable parking brakes (shift+b) , increase throttle to full.
+Run down the runway, adjust steering if needed using your rudder and pull up when you reach around 130kts. 
+To prevent stall, please climb at a rate of 15 degrees.
+
+What you need to know? -Auto Pilot
+1. Select an airport within 5700nm range from where you are now.
+2. Input the airport code into AP route manager and activate it
+3. From cockpits AP panel, set your alt to 33000 and activate it
+4. Manually rundown the runway and take off (see above on taking off)
+5. Climb till at lest 5000 or 7000 feet
+6. Ensure you are not at stall speed
+7. Now click on AP, AT and LNAV button to activate it
+8. Now you will watch this plane climb till 33000 feet and will go into cruise mode.
+
+What you need to know? -400T cargo
+1. Do select a long runway if you are flying with max fuel and payload
+2. Watch for obstacles and stall as you climb
+3. Preferred if you can rundown till 170kts before take off
+
+What has been done so far?
+1. FDM (Completed)
+2. Model (Complete)
+3. Animations (new liveries were added)
+4. Livery select (Complete)
+5. 400T cargo version liveries will be found in ....Liveries/Cargo/ folder
+
+More Liveries
+More liveries have been created and will be made available at www.unitedfreeworld.commercial
+Please visit the site more frequently for the latest updates and liveries
 
 
 How can you help?
 1) You can further perfect the animations
-2)Assit with lights animation
+
 
 Pelase send me the updated file so that i can include in future packages
 
 
 Final Word..
-Enjoy your flights captains
+"Enjoy your flight captains"
 
 Regards,
 xsaint
 www.unitedfreeworld.com
+June 2010
 
-Please keep this package free from commercial distributions. As this was developed using some 777ER files, Creative Common rights may be retained.
+Notice:
+Please keep this package free from commercial distributions. 
+As this was developed using some 777-200ER files, Creative Common rights are retained as per syd's 777 package.

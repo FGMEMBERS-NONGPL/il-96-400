@@ -25,7 +25,10 @@ il-96-400 PFD
             <z-m>0.094</z-m>
         </top-left>
     </panel>
+ 
+  
 
+    
     <panel>
         <path>Aircraft/il-96-400/Models/Instruments/PFD/text-panel.xml</path>
         <bottom-left>
@@ -44,5 +47,9 @@ il-96-400 PFD
             <z-m>0.094</z-m>
         </top-left>
     </panel>
+
+ 
+
+
 
 </PropertyList>
